@@ -1,0 +1,17 @@
+{
+  "organizations": [
+    {"id": 1, "name": "Development"}
+  ],
+  "categories": [
+    {"id": 1, "name": "General", "organization": 1}
+  ],
+  "questions": [
+    {"id": 1, "text": "Question #1", "category": 1}
+  ],
+  "answers": [
+    {"id": 1, "text": "Answer #1 (correct)", "correct": true, "question": 1},
+    {"id": 2, "text": "Answer #2", "correct": false, "question": 1},
+    {"id": 3, "text": "Answer #3", "correct": false, "question": 1},
+    {"id": 4, "text": "Answer #4", "correct": false, "question": 1}
+  ]
+}
