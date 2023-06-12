@@ -1,9 +1,10 @@
-import Navbar from './components/Navbar';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Header from './components/Header';
+import Navbar from './components/Navbar';
 import Home from './views/Home';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Organizations from './views/Organizations';
+import OrganizationCreate from './views/OrganizationCreate';
 import OrganizationDetails from './views/OrganizationDetails';
+import Organizations from './views/Organizations';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />}></Route>
             <Route path='/organizations' element={<Organizations />}></Route>
+            <Route path='/organizations/create' element={<OrganizationCreate />}></Route>
             <Route path='/organizations/:id' element={<OrganizationDetails />}></Route>
           </Routes>
         </div>
