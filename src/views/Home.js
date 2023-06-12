@@ -15,7 +15,6 @@ const Home = () => {
 
   return (
     <section className='home'>
-      <h1>Trivia Dashboard</h1>
       {isLoading && <h4>Loading...</h4>}
       {isError && <h4>There was an error! Try again</h4>}
       {categories && <CategoryList title='Categories' categories={categories} deleteHandler={deleteCategory} />}

@@ -8,7 +8,6 @@ const useFetch = (url) => {
   useEffect(() => {
     setIsLoading(true);
     setIsError(false);
-    console.log(`url:${url}`);
 
     fetch(url)
       .then((res) => {
