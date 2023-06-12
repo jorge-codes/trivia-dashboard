@@ -17,6 +17,12 @@
       "address": "Eleuterio Ramirez",
       "country": "CL",
       "id": 3
+    },
+    {
+      "name": "Ludopia",
+      "address": "Av Jose Pedro Alessandri",
+      "country": "",
+      "id": 4
     }
   ],
   "categories": [

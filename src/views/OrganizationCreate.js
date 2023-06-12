@@ -1,23 +1,23 @@
 import React from 'react';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const OrganizationCreate = () => {
-  const [isLoading, setIsLoading] = useState(false);
+  const navigate = new useNavigate();
 
+  const [isLoading, setIsLoading] = useState(false);
   const [name, setName] = useState('');
   const [address, setAddress] = useState('');
   const [country, setCountry] = useState('');
 
   const handleCreate = (e) => {
     e.preventDefault();
-    console.log('adding new organization...');
     const organization = { name, address, country };
     createOrganization(organization);
+    navigate('/');
   };
 
   const createOrganization = (organization) => {
-    console.log(organization);
-
     setIsLoading(true);
 
     const url = 'http://localhost:8080/organizations';
