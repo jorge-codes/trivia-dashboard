@@ -1,6 +1,7 @@
 {
   "organizations": [
-    {"id": 1, "name": "Development"}
+    {"id": 1, "name": "Development 01", "address": "1 Infinite Loop, Menlo Park", "country": "US"},
+    {"id": 2, "name": "Development 02", "address": "64 Metaverse Way", "country": "US"}
   ],
   "categories": [
     {"id": 1, "name": "General", "organization": 1},
