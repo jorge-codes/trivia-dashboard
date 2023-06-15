@@ -8,7 +8,7 @@ import CategoriesView from './views/CategoriesView';
 function App() {
   return (
     <Router>
-      <div className='App' data-testid='main'>
+      <main className='App'>
         <Header />
         <Navbar />
         <div className='content'>
@@ -18,7 +18,7 @@ function App() {
             <Route path='*' element={<NotFound />}></Route>
           </Routes>
         </div>
-      </div>
+      </main>
     </Router>
   );
 }

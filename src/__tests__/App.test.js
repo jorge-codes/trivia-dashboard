@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from '../App';
 
-test('renders learn react link', () => {
+test("renders app's main tag", () => {
   render(<App />);
-  const main = screen.getByTestId('main');
+  const main = screen.getByRole('main');
   expect(main).toBeInTheDocument();
 });

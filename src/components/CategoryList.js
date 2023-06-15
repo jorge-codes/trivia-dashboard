@@ -5,9 +5,7 @@ const CategoryList = ({ title, categories, deleteHandler }) => {
     <section className='category-list'>
       {title && <h2>{title}</h2>}
       {categories.map((item) => (
-        <h3 key={item.id}>
-          {item.name} <button onClick={() => deleteHandler(item.id)}>X</button>
-        </h3>
+        <h3 key={item.id}>{item.name}</h3>
       ))}
     </section>
   );
